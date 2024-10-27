@@ -1,0 +1,46 @@
+#experience2 {
+  min-height: calc(100vh - 4rem);
+  width: 100vh;
+  max-width: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  }
+
+  
+  
+  .experience-card {
+    flex-basis: 320px;
+    min-width: 320px;
+    max-width: 320px;
+    padding: 1rem;
+    border-radius: 2rem;
+    background-color: #f4e869;
+    color: #070707;
+  }
+  
+  .experTittle {
+    border-bottom: 5px solid yellow;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 10rem;
+    margin-bottom: 1rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    margin-top: -10rem;
+  }
+  
+  .experience-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+  }
+  
+  .experience-card:hover {
+    transform: scale(1.02);
+  }
+  

@@ -1,0 +1,51 @@
+#education {
+  overflow: hidden;
+  min-height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2rem; /* Optional padding for better spacing */
+}
+
+.MuiStepper-root {
+  width: 100%; /* Make the stepper take full width within the container */
+}
+
+.MuiStepContent-root {
+  margin-top: 1rem; /* Add some spacing between steps */
+}
+
+.MuiTypography-root {
+  font-size: 1.1rem; /* Adjust font size for better readability */
+}
+
+.MuiButton-root {
+  margin: 0.5rem; /* Add spacing between buttons */
+}
+
+.eduTittle {
+  border-bottom: 5px solid yellow;
+  padding-bottom: 1.5rem;
+  padding-top: 150rem;
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: -6rem;
+}
+.eduDes {
+  font-weight: 400;
+  font-size: 1rem;
+  max-width: 51rem;
+  padding: 0 1rem;
+  line-height: 1.5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 3rem;
+}

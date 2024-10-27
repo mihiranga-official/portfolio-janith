@@ -1,0 +1,87 @@
+#projects {
+  margin: 0 auto;
+  min-height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 200rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+.projectTittle {
+  border-bottom: 5px solid yellow;
+  padding-bottom: 1.5rem;
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 1rem;
+  margin-bottom: 1.5rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: -6rem;
+}
+.projectDes {
+  font-weight: 400;
+  font-size: 1rem;
+  max-width: 51rem;
+  padding: 0 2rem;
+  line-height: 1.5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.card {
+  transition: transform 0.2s;
+  cursor: pointer;
+  border: 2px solid #784b29;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.cardContent {
+  text-align: center; /* Align text to the left */
+}
+
+.cardBody {
+  font-size: 1rem;
+  color: #000000;
+}
+.aboutLink {
+  margin-top: 1.25rem; /* Space above the button */
+  display: flex;
+  justify-content: center; /* Center the button */
+  background-color: #dbdfea;
+  border: 2px solid black;
+  border-radius: 28px;
+  margin: 0.5rem;
+  padding: 10px;
+  font-size: 1rem;
+  margin-left: -18rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.about {
+  margin-left: 10rem;
+  margin-top: 1.5rem;
+}
+
+.aboutLink:hover {
+  background-color: #eff5f5; /* Darker shade on hover */
+}
+.aboutLinkText {
+  color: black;
+}
+.aboutLink {
+  margin-top: 1.25rem; /* Space above the button */
+  display: flex;
+  justify-content: center; /* Center the button */
+  background-color: #dbdfea;
+  border: 2px solid black;
+  border-radius: 28px;
+  margin: 0.5rem;
+  padding: 10px;
+  font-size: 1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}

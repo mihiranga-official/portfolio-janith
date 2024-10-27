@@ -1,0 +1,55 @@
+.navbar {
+  background: white;
+  height: 5rem;
+  width: 100vw;
+  margin: 0;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+.logo {
+  object-fit: cover;
+  height: 3rem;
+}
+.desktopMenuListItem {
+  margin: 1rem;
+  cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: large;
+}
+.desktopMenuListItem:hover {
+  color: yellow;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid yellow;
+  color: black;
+}
+.active {
+  color: #f3c623;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid #f3c623;
+}
+.desttopMenuIcon {
+  object-fit: cover;
+  /* height: 0.25rem;
+  width: 0.25rem; */
+  margin: 0.15rem;
+  background-color: transparent;
+}
+.DesktopMenuBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5rem;
+  padding: 0.5rem 1rem;
+  background: rgba(253, 253, 14, 0.859);
+  color: rgb(29, 27, 27);
+  font-weight: 600;
+  font-size: large;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
