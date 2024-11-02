@@ -19,11 +19,11 @@
   margin-bottom: 1.5rem;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  margin-top: -1rem;
+  margin-top: -2rem;
 }
 .skillDes {
-  font-weight: 400;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 1.10rem;
   max-width: 51rem;
   padding: 0 2rem;
   line-height: 1.5;
@@ -39,6 +39,7 @@
 .container {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 10rem;
 }
 
 .cardSkills {

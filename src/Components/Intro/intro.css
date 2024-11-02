@@ -27,7 +27,7 @@
   justify-content: center;
 }
 .hello {
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 100;
 }
 .introName {
@@ -39,3 +39,10 @@
   line-height: 1.5rem;
   letter-spacing: 1px;
 }
+.waveIcon {
+  width: 70px; 
+  height: 95px; 
+  vertical-align: middle; 
+  margin-left: 5px;
+}
+

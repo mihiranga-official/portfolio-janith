@@ -1,5 +1,4 @@
 #about {
-  overflow: hidden;
   min-height: calc(100vh - 4rem);
   width: 100vw;
   max-width: 70rem;
@@ -10,10 +9,11 @@
   text-align: center;
   margin: 0 auto;
 }
+
 .aboutTittle {
   border-bottom: 5px solid yellow;
   padding-bottom: 1.5rem;
-  margin-top: -7rem;
+  margin-top: -3rem;
   font-size: 3rem;
   font-weight: 600;
   padding-top: 3rem;
@@ -22,15 +22,15 @@
     "Lucida Sans", Arial, sans-serif;
 }
 .aboutDes {
-  font-weight: 400;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
   max-width: 51rem;
   padding: 0 2rem;
   line-height: 1.5;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .aboutBar {
-  margin: 1.5rem;
+  margin: 0.75rem;
   width: 50vw;
   max-width: 60%;
   text-align: left;
@@ -38,7 +38,7 @@
 .aboutInfo {
   display: flex;
   margin: 0.5rem;
-  padding: 1.25rem 2rem;
+  padding: 1rem 1rem;
   background: #f3f948;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   border-radius: 50px;
@@ -63,4 +63,41 @@
 .aboutValueA {
   font-weight: 500;
   padding-left: 1rem;
+}
+.aboutLinkedin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dbdfea;
+  border: 1px solid rgb(43, 33, 112);
+  border-radius: 28px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  transition: background-color 0.3s ease;
+  gap: 8px;
+  margin-left: 5px;
+  width: fit-content;
+  margin-bottom: 10rem;
+}
+
+.aboutLinkedin:hover {
+  background-color: #c0c4d1;
+}
+
+.aboutLinkedin .aboutLinkText {
+  color: rgb(28, 72, 215);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.aboutLinkedin .aboutLinkText:hover {
+  color: #2527a7;
+}
+
+.aboutLinkedin svg {
+  font-size: 1.5rem;
+  color: rgb(19, 89, 193);
 }

@@ -1,4 +1,4 @@
-#experience2 {
+#service {
   min-height: calc(100vh - 4rem);
   width: 100vh;
   max-width: 50rem;
@@ -12,18 +12,17 @@
   }
 
   
-  
   .experience-card {
     flex-basis: 320px;
     min-width: 320px;
     max-width: 320px;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 2rem;
-    background-color: #f4e869;
+    background: linear-gradient(to bottom, #FFEC85, #FFFFFF);
     color: #070707;
   }
   
-  .experTittle {
+  .serTittle {
     border-bottom: 5px solid yellow;
     padding-bottom: 1rem;
     font-size: 3rem;

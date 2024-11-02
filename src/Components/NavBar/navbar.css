@@ -33,23 +33,30 @@
   padding-bottom: 0.5rem;
   border-bottom: 3px solid #f3c623;
 }
-.desttopMenuIcon {
-  object-fit: cover;
-  /* height: 0.25rem;
-  width: 0.25rem; */
-  margin: 0.15rem;
-  background-color: transparent;
-}
-.DesktopMenuBtn {
+.buttonContact {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: none;
-  border-radius: 5rem;
-  padding: 0.5rem 1rem;
-  background: rgba(253, 253, 14, 0.859);
+  border: 2px solid black;
+  border-radius: 3rem;
+  padding: 0.5rem 0.75rem;
+  background-color: #FEEC37;
   color: rgb(29, 27, 27);
   font-weight: 600;
-  font-size: large;
+  font-size: 1rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  gap: 8px;
+  
+}
+
+.buttonContact:hover {
+  background-color: #f3d822;
+}
+
+.buttonContact .desktopMenuIcon {
+  width: 1.35rem;
+  height: 1.5rem;
+  margin-top: 0.5;
 }

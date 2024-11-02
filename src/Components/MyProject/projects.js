@@ -4,7 +4,6 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Box from "@mui/material/Box";
 import Chip from "@mui/material/Chip";
 
@@ -13,11 +12,10 @@ const Projects = () => {
     <section id="projects">
       <span className="projectTittle">My Projects</span>
       <span className="projectDes">
-        I have developed multiple projects using a variety of technologies,
-        including React, Angular, and Firebase. These include an e-commerce
-        platform with real-time data management, a customer relationship
-        management tool, and a cross-platform mobile fitness app, all focused on
-        providing dynamic, user-friendly solutions.
+        I have developed various projects using React, Angular, and Firebase,
+        including an e-commerce platform with real-time data management, a CRM
+        tool, and a cross-platform mobile fitness app, all focused on dynamic,
+        user-friendly solutions.
       </span>
 
       <div
@@ -30,7 +28,7 @@ const Projects = () => {
             maxWidth: 450,
             margin: "15px",
             borderRadius: 10,
-            background: "linear-gradient(135deg, #fff9c4 30%, #F0EB8D 60%)",
+            background: "linear-gradient(to bottom, #FEFF9F, #FFFFFF)",
           }}
           onClick={() =>
             window.open(
@@ -46,7 +44,7 @@ const Projects = () => {
               variant="h5"
               component="div"
               className="cardTitle"
-              sx={{ fontSize: "1.5rem", fontFamily: "cursive" }} // Adjust size and family here
+              sx={{ fontSize: "1.5rem", fontFamily: "cursive" }}
             >
               Salon Management System
             </Typography>
@@ -56,15 +54,15 @@ const Projects = () => {
               color="text.secondary"
               className="cardBody"
               sx={{
-                fontFamily: "revert-layer",
+                fontFamily: "Georgia, sans-serif",
                 fontSize: "1rem",
+                fontWeight: 400,
               }}
             >
-              A salon management system web app built with React and Firebase
-              offers comprehensive features for appointment management, user
-              account handling, and price viewing. Leveraging Firebase, the app
-              provides real-time updates, ensuring seamless booking and
-              efficient customer data management for both staff and clients.
+              A salon management web app built with React and Firebase provides
+              features for appointment management, user accounts, and price
+              viewing, ensuring real-time updates and efficient customer data
+              management.
             </Typography>
 
             <Box
@@ -93,7 +91,7 @@ const Projects = () => {
             maxWidth: 450,
             margin: "15px",
             borderRadius: 10,
-            background: "linear-gradient(135deg, #fff9c4 30%, #F0EB8D 60%)",
+            background: "linear-gradient(to bottom, #FEFF9F, #FFFFFF)",
           }}
           onClick={() =>
             window.open("https://github.com/mihiranga-official/Resto", "_blank")
@@ -115,15 +113,15 @@ const Projects = () => {
               color="text.secondary"
               className="cardBody"
               sx={{
-                fontFamily: "revert-layer",
+                fontFamily: "Georgia, sans-serif",
                 fontSize: "1rem",
+                fontWeight: 400,
               }}
             >
-              A restaurant management system web application built with React
-              and Firebase facilitates online ordering, reservation management,
-              and menu updates. Firebase provides real-time data
-              synchronization, enhancing the user experience for both customers
-              and staff.
+              A restaurant management web app built with React and Firebase
+              enables online ordering, reservation management, and menu updates,
+              offering real-time data synchronization for an enhanced user
+              experience.
             </Typography>
             <Box
               sx={{
@@ -136,11 +134,19 @@ const Projects = () => {
             >
               <Chip
                 label="React"
-                sx={{ bgcolor: "#D875C7", color: "#000000" }}
+                sx={{
+                  bgcolor: "#D875C7",
+                  color: "#000000",
+                  marginTop: "1.43rem",
+                }}
               />
               <Chip
                 label="Firebase"
-                sx={{ bgcolor: "#7F9F80", color: "#000000" }}
+                sx={{
+                  bgcolor: "#7F9F80",
+                  color: "#000000",
+                  marginTop: "1.43rem",
+                }}
               />
             </Box>
           </CardContent>
@@ -151,7 +157,7 @@ const Projects = () => {
             maxWidth: 450,
             margin: "15px",
             borderRadius: 10,
-            background: "linear-gradient(135deg, #fff9c4 30%, #F0EB8D 60%)",
+            background: "linear-gradient(to bottom, #FEFF9F, #FFFFFF)",
           }}
           onClick={() =>
             window.open(
@@ -176,14 +182,15 @@ const Projects = () => {
               color="text.secondary"
               className="cardBody"
               sx={{
-                fontFamily: "revert-layer",
+                fontFamily: "Georgia, sans-serif",
                 fontSize: "1rem",
+                fontWeight: 400,
               }}
             >
-              A generative AI chatbot built with <b>Python</b> leverages NLP and
-              machine learning to generate real-time, relevant responses. It’s
-              ideal for tasks like customer support and content generation,
-              offering intelligent, conversational experiences.
+              A generative AI chatbot built with Python uses NLP and machine
+              learning to deliver real-time, relevant responses, making it ideal
+              for customer support and content generation while adapting to user
+              needs.
             </Typography>
             <Box
               sx={{
@@ -196,24 +203,18 @@ const Projects = () => {
             >
               <Chip
                 label="Python"
-                sx={{ bgcolor: "#59D5E0", color: "#000000" }}
+                sx={{
+                  bgcolor: "#59D5E0",
+                  color: "#000000",
+                  marginTop: "1.50rem",
+                }}
               />
             </Box>
           </CardContent>
         </Card>
       </div>
-      <div className="aboutLink">
-        <LinkedInIcon />
-        <a
-          href="https://www.linkedin.com/in/janithmihiranga"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="aboutLinkText"
-        >
-          View LinkedIn
-        </a>
-      </div>
-      <div className="aboutLink about">
+
+      <div className="aboutLinkGit">
         <GitHubIcon />
         <a
           href="https://github.com/mihiranga-official"

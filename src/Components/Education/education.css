@@ -1,5 +1,4 @@
 #education {
-  overflow: hidden;
   min-height: calc(100vh - 4rem);
   width: 100vw;
   max-width: 50rem;
@@ -38,14 +37,14 @@
   margin-bottom: 1.5rem;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  margin-top: -6rem;
+  margin-top: -4rem;
 }
 .eduDes {
-  font-weight: 400;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 1.10rem;
   max-width: 51rem;
   padding: 0 1rem;
   line-height: 1.5;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }

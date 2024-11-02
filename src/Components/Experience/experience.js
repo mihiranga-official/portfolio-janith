@@ -1,9 +1,14 @@
 import React from "react";
 import "./experience.css";
 import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
+import Box from "@mui/material/Box";
+import Chip from "@mui/material/Chip";
+import Stack from "@mui/material/Stack";
+import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
-
+import virtusa from "../../assets/virtusa.jpeg";
+import damro from "../../assets/damro.png";
+import logo from "../../assets/online.png";
 
 const Experience = () => {
   return (
@@ -15,69 +20,316 @@ const Experience = () => {
         Material-UI and optimized performance, while maintaining data integrity
         and promoting high coding standards.
       </span>
-
-      <div className="container">
-        {/* First Card */}
-        <Card className="card2 cardAdd" sx={{ borderRadius: 10 }}>
-          <CardContent>
-            <Typography gutterBottom component="div">
-              <div className="expRow">
-                <span className="expText">Company: </span>
-                <span className="expValue">Virtusa Pvt Ltd</span>
-              </div>
-              <div className="expRow">
-                <span className="expText1">Designation: </span>
-                <span className="expValue">Frontend Software Engineer</span>
-              </div>
-              <div className="expRow">
-                <span className="expText2">Duration:</span>
-                <span className="expValue">3 Years (2021 - 2024)</span>
-              </div>
+      <Stack
+        direction="row"
+        spacing={6}
+        justifyContent="center"
+        marginTop={5}
+        marginBottom={25}
+      >
+        <Card
+          variant="outlined"
+          sx={{
+            width: 300,
+            height: 350,
+            padding: 3,
+            borderRadius: 5,
+            borderColor: "#343131",
+            borderWidth: 2,
+            borderStyle: "solid",
+            backgroundImage: "linear-gradient(to bottom, #FDFFC2, #FFFFFF)",
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+          }}
+        >
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              position: "relative",
+              mb: 2,
+            }}
+          >
+            <Box
+              component="img"
+              src={virtusa}
+              alt="Virtusa"
+              sx={{
+                width: 75,
+                height: 75,
+                borderRadius: "50%",
+                position: "absolute",
+                top: -15,
+                marginRight: "0rem"
+              }}
+            />
+          </Box>
+          <Box sx={{ p: 2, textAlign: "center" }}>
+            <Typography
+              gutterBottom
+              variant="h6"
+              component="div"
+              sx={{
+                fontWeight: 700,
+                fontFamily: "Georgia, sans-serif",
+                fontSize: "1.5rem",
+                color: "#343131",
+                marginTop: "40px",
+              }}
+            >
+              Virtusa Pvt Ltd
             </Typography>
-          </CardContent>
+            <Typography
+              variant="body2"
+              sx={{
+                color: "#61677A",
+                marginTop: 1,
+                fontFamily: "cursive",
+                fontSize: "1rem",
+              }}
+            >
+              Frontend Software Engineer
+            </Typography>
+          </Box>
+          <Divider sx={{ backgroundColor: "#000000", height: "2px", width: "100%" }} />
+          <Box sx={{ p: 2, textAlign: "center" }}>
+            <Typography
+              gutterBottom
+              variant="body2"
+              sx={{
+                fontWeight: 400,
+                fontSize: "1rem",
+                color: "text.primary",
+                fontFamily: "monospace",
+              }}
+            >
+              Duration
+            </Typography>
+            <Stack
+              direction="row"
+              spacing={1}
+              sx={{ justifyContent: "center" }}
+            >
+              <Chip
+                label="3 Years (2021 - 2024)"
+                sx={{
+                  backgroundColor: "#F5D061",
+                  color: "black",
+                  fontWeight: 600,
+                  padding: 2,
+                  margin: 2,
+                  fontSize: "0.80rem",
+                }}
+              />
+            </Stack>
+          </Box>
         </Card>
 
-        {/* Second Card */}
-        <Card className="card2 cardAdd" sx={{ borderRadius: 10 }}>
-          <CardContent>
-            <Typography gutterBottom component="div">
-              <div className="expRow">
-                <span className="expText">Company: </span>
-                <span className="expValue1">Damro Export</span>
-              </div>
-              <div className="expRow">
-                <span className="expText1">Designation: </span>
-                <span className="expValue1">Software Engineer</span>
-              </div>
-              <div className="expRow">
-                <span className="expText2">Duration:</span>
-                <span className="expValue1">2024 - Inpresent</span>
-              </div>
+        <Card
+          variant="outlined"
+          sx={{
+            width: 300,
+            height: 350,
+            padding: 3,
+            borderRadius: 5,
+            borderColor: "#343131",
+            borderWidth: 2,
+            borderStyle: "solid",
+            backgroundImage: "linear-gradient(to bottom, #FDFFC2, #FFFFFF)",
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+          }}
+        >
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              position: "relative",
+              mb: 2,
+            }}
+          >
+            <Box
+              component="img"
+              src={damro}
+              alt="Damro"
+              sx={{
+                width: 75,
+                height: 75,
+                borderRadius: "50%",
+                position: "absolute",
+                top: -15,
+               marginRight: "0rem"
+              }}
+            />
+          </Box>
+          <Box sx={{ p: 2, textAlign: "center" }}>
+            <Typography
+              gutterBottom
+              variant="h6"
+              component="div"
+              sx={{
+                fontWeight: 700,
+                fontFamily: "Georgia, sans-serif",
+                fontSize: "1.5rem",
+                color: "#343131",
+                marginTop: "40px",
+              }}
+            >
+              Damro Pvt Ltd
             </Typography>
-          </CardContent>
+            <Typography
+              variant="body2"
+              sx={{
+                color: "#61677A",
+                marginTop: 1,
+                fontFamily: "cursive",
+                fontSize: "1rem",
+              }}
+            >
+              Software Engineer
+            </Typography>
+          </Box>
+          <Divider sx={{ backgroundColor: "#000000", height: "2px", width: "100%" }} />
+          <Box sx={{ p: 2, textAlign: "center" }}>
+            <Typography
+              gutterBottom
+              variant="body2"
+              sx={{
+                fontWeight: 400,
+                fontSize: "1rem",
+                color: "text.primary",
+                fontFamily: "monospace",
+              }}
+            >
+              Duration
+            </Typography>
+            <Stack
+              direction="row"
+              spacing={1}
+              sx={{ justifyContent: "center" }}
+            >
+              <Chip
+                label="2024 - In Present"
+                sx={{
+                  backgroundColor: "#EFD510",
+                  color: "black",
+                  fontWeight: 600,
+                  padding: 2,
+                  margin: 2,
+                  fontSize: "0.80rem",
+                }}
+              />
+            </Stack>
+          </Box>
         </Card>
 
-        {/* Third Card */}
-        <Card className="card2 cardAdd" sx={{ borderRadius: 10 }}>
-          <CardContent>
-            <Typography gutterBottom component="div">
-              <div className="expRow">
-                <span className="expText1">Designation: </span>
-                <span className="expValue2">ICT Teacher (Online)</span>
-              </div>
-              <div className="expRow">
-                <span className="expText2">Duration:</span>
-                <span className="expValue3">2021 - In Present</span>
-              </div>
+        <Card
+          variant="outlined"
+          sx={{
+            width: 300,
+            height: 350,
+            padding: 3,
+            borderRadius: 5,
+            borderColor: "#343131",
+            borderWidth: 2,
+            borderStyle: "solid",
+            backgroundImage: "linear-gradient(to bottom, #FDFFC2, #FFFFFF)",
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+          }}
+        >
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              position: "relative",
+              mb: 2,
+            }}
+          >
+            <Box
+              component="img"
+              src={logo}
+              alt="Logo"
+              sx={{
+                width: 65,
+                height: 65,
+                objectFit: "cover",
+                borderRadius: "50%",
+                position: "absolute",
+                top: -15,
+                marginRight: "0rem"
+              }}
+            />
+          </Box>
+          <Box sx={{ p: 2, textAlign: "center" }}>
+            <Typography
+              gutterBottom
+              variant="h6"
+              component="div"
+              sx={{
+                fontWeight: 700,
+                fontFamily: "Georgia, sans-serif",
+                fontSize: "1.5rem",
+                color: "#343131",
+                marginTop: "40px",
+              }}
+            >
+              ICT Teacher
             </Typography>
-          </CardContent>
+            <Typography
+              variant="body2"
+              sx={{
+                color: "#61677A",
+                marginTop: 1,
+                fontFamily: "cursive",
+                fontSize: "1rem",
+              }}
+            >
+              Online
+            </Typography>
+          </Box>
+          <Divider sx={{ backgroundColor: "#000000", height: "2px", width: "100%" }} />
+          <Box sx={{ p: 2, textAlign: "center" }}>
+            <Typography
+              gutterBottom
+              variant="body2"
+              sx={{
+                fontWeight: 400,
+                fontSize: "1rem",
+                color: "text.primary",
+                fontFamily: "monospace",
+              }}
+            >
+              Duration
+            </Typography>
+            <Stack
+              direction="row"
+              spacing={1}
+              sx={{ justifyContent: "center" }}
+            >
+              <Chip
+                label="2021 - In Present"
+                sx={{
+                  backgroundColor: "#FFEB00",
+                  color: "black",
+                  fontWeight: 600,
+                  padding: 2,
+                  margin: 2,
+                  fontSize: "0.80rem",
+                }}
+              />
+            </Stack>
+          </Box>
         </Card>
-      </div>
-
-      {/*----------------------------------------------------------------------------------------------------------------*/}
-     
+      </Stack>
     </section>
   );
-};
+}
 
 export default Experience;

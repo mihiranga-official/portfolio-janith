@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import "./service.css";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
@@ -7,13 +7,11 @@ import Divider from "@mui/material/Divider";
 
 const Service = () => {
   return (
-   
-    <section id="experience2">
-       <span className="experTittle">Services</span>
-     
+    <section id="service">
+      <span className="serTittle">Services</span>
 
+      {/* Row 1: Three Boxes */}
       <div
-        className="three-boxes"
         style={{
           display: "flex",
           gap: "2rem",
@@ -21,36 +19,39 @@ const Service = () => {
           marginTop: "2rem",
         }}
       >
-        {/* ------------------------Box 1 ----------------------*/}
-        <Box className="experience-card" sx={{ p: 1, borderRadius: 5 }}>
-          <Typography variant="body2" sx={{ color: "#888", mb: 1 }}>
+        {/* Box 1 */}
+        <Box
+          className="experience-card"
+          sx={{ p: 1, borderRadius: 5, width: "300px" }}
+        >
+          <Typography variant="body2" sx={{ color: "#496989", mb: 1,fontSize:14, fontWeight:600 }}>
             January 2022 - October 2022
           </Typography>
-
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ fontWeight: "bold" }}
-          >
-            Production Support Engineer . <br /> Iron Mountain <br />
-            (Progress 4GL Language)
+          <Typography variant="h6" component="div" sx={{ fontWeight: "bold" }}>
+            Production Support Engineer <br /> Iron Mountain <br /> (Progress
+            4GL Language)
           </Typography>
-
-          <Typography variant="body2" sx={{ color: "#888", mb: 2 }}>
+          <Typography
+            variant="body2"
+            sx={{ color: "#496989", mb: 2, marginTop: 1, fontSize:14, fontWeight:600  }}
+          >
             Virtusa Pvt Ltd
           </Typography>
-
-          <Typography variant="body2" sx={{ mb: 2, lineHeight: 1.7 }}>
-            In a collaborative work environment, contributed by writing unit
-            test case documents to ensure software quality, resolving critical
-            production issues, and providing peer reviews to support team
-            improvement. Followed structured code standards, ensuring
-            consistent and maintainable outputs while promoting a smooth
-            workflow.
+          <Typography
+            variant="body2"
+            sx={{
+              mb: 2,
+              lineHeight: 1.7,
+              fontFamily: "Georgia, sans-serif",
+              fontWeight: 400,
+            }}
+          >
+            Contributed to a collaborative environment by creating unit test
+            cases, resolving production issues, and providing peer reviews.
+            Ensured code quality and maintainability by adhering to structured
+            standards.
           </Typography>
-
-          <Divider sx={{ bgcolor: "#444", my: 2 }} />
-
+          <Divider sx={{ bgcolor: "#444", my: 2, width: "100%" }} />
           <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
             <Chip
               label="Notepad ++"
@@ -60,10 +61,7 @@ const Service = () => {
               label="GUI Procedure Editor"
               sx={{ bgcolor: "#3795BD", color: "#ffffff" }}
             />
-            <Chip
-              label="Putty"
-              sx={{ bgcolor: "#00A896", color: "#ffffff" }}
-            />
+            <Chip label="Putty" sx={{ bgcolor: "#00A896", color: "#ffffff" }} />
             <Chip
               label="Developer Studio"
               sx={{ bgcolor: "#77B0AA", color: "#ffffff" }}
@@ -75,36 +73,38 @@ const Service = () => {
           </Box>
         </Box>
 
-        {/*---------------- Box 2 ----------------------*/}
-        <Box className="experience-card" sx={{ p: 1, borderRadius: 5 }}>
-          <Typography variant="body2" sx={{ color: "#888", mb: 1 }}>
+        {/* Box 2 */}
+        <Box
+          className="experience-card"
+          sx={{ p: 1, borderRadius: 5, width: "300px" }}
+        >
+          <Typography variant="body2" sx={{ color: "#496989", mb: 1, fontSize:14, fontWeight:600  }}>
             October 2022 - November 2023
           </Typography>
-
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ fontWeight: "bold" }}
-          >
-            Smart Reveal Upgrade Frontend Engineer . <br /> Iron Mountain{" "}
-            <br />
-            (React)
+          <Typography variant="h6" component="div" sx={{ fontWeight: "bold" }}>
+            Smart Reveal Frontend Engineer <br /> Iron Mountain <br /> (React)
           </Typography>
-
-          <Typography variant="body2" sx={{ color: "#888", mb: 2 }}>
+          <Typography
+            variant="body2"
+            sx={{ color: "#496989", mb: 2, marginTop: 1, fontSize:14, fontWeight:600  }}
+          >
             Virtusa Pvt Ltd
           </Typography>
-
-          <Typography variant="body2" sx={{ mb: 2, lineHeight: 1.7 }}>
-            Resolved critical bugs, implemented Firebase, and designed UIs
-            with Material UI while managing Redux. Transformed a Progress 4GL
-            app with React, ensured secure, scalable code, and integrated
-            third-party APIs into Node.js. Led UI/UX design, contributed to
-            documentation, and provided peer reviews within Agile/Scrum.
+          <Typography
+            variant="body2"
+            sx={{
+              mb: 2,
+              lineHeight: 1.7,
+              fontFamily: "Georgia, sans-serif",
+              fontWeight: 400,
+            }}
+          >
+            Efficiently resolved critical bugs, integrated Firebase, and
+            designed Material UI interfaces with Redux. Modernized a Progress
+            4GL app with React, integrated APIs, and led UI/UX and documentation
+            within Agile/Scrum.
           </Typography>
-
-          <Divider sx={{ bgcolor: "#444", my: 2 }} />
-
+          <Divider sx={{ bgcolor: "#444", my: 2, width: "100%" }} />
           <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
             <Chip
               label="React.js"
@@ -126,44 +126,42 @@ const Service = () => {
             <Chip
               label="GitLab"
               sx={{ bgcolor: "#BB9AB1", color: "#000000" }}
-            />
-            <Chip
-              label="Postman"
-              sx={{ bgcolor: "#DEF9C4", color: "#000000" }}
             />
           </Box>
         </Box>
 
-        {/*------------------------- Box 3 -------------------- */}
-        <Box className="experience-card" sx={{ p: 1, borderRadius: 5 }}>
-          <Typography variant="body2" sx={{ color: "#888", mb: 1 }}>
+        {/* Box 3 */}
+        <Box
+          className="experience-card"
+          sx={{ p: 1, borderRadius: 5, width: "300px" }}
+        >
+          <Typography variant="body2" sx={{ color: "#496989", mb: 1, fontSize:14, fontWeight:600  }}>
             November 2023 - April 2024
           </Typography>
-
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ fontWeight: "bold" }}
-          >
-            Secure Base Upgrade Full Stack Engineer . <br /> Iron Mountain{" "}
-            <br />
-            (React)
+          <Typography variant="h6" component="div" sx={{ fontWeight: "bold" }}>
+            Secure Base Full Stack Engineer <br /> Iron Mountain <br /> (React)
           </Typography>
-
-          <Typography variant="body2" sx={{ color: "#888", mb: 2 }}>
+          <Typography
+            variant="body2"
+            sx={{ color: "#496989", mb: 2, marginTop: 1, fontSize:14, fontWeight:600  }}
+          >
             Virtusa Pvt Ltd
           </Typography>
-
-          <Typography variant="body2" sx={{ mb: 2, lineHeight: 1.7 }}>
-            Addressed major bugs, integrated Firebase, and created user
-            interfaces with Material UI. Managed Redux for consistency,
-            revamped a .NET app using React, and ensured secure, scalable
-            code. Oversaw UI/UX design, peer reviews, and integrated APIs into
-            Node.js within Agile frameworks.
+          <Typography
+            variant="body2"
+            sx={{
+              mb: 2,
+              lineHeight: 1.7,
+              fontFamily: "Georgia, sans-serif",
+              fontWeight: 400,
+            }}
+          >
+            Resolved major bugs, integrated Firebase, crafted responsive
+            Material UI interfaces, and managed Redux. Modernized a .NET app
+            with React, ensured secure code, led UI/UX, peer reviews, and
+            seamless API integration in Agile.
           </Typography>
-
-          <Divider sx={{ bgcolor: "#444", my: 2 }} />
-
+          <Divider sx={{ bgcolor: "#444", my: 2, width: "100%" }} />
           <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
             <Chip
               label="React.js"
@@ -173,6 +171,10 @@ const Service = () => {
             <Chip
               label="NodeJS"
               sx={{ bgcolor: "#E63946", color: "#ffffff" }}
+            />
+            <Chip
+              label="Postman"
+              sx={{ bgcolor: "#DEF9C4", color: "#000000" }}
             />
             <Chip
               label="Firebase Integrations"
@@ -186,15 +188,103 @@ const Service = () => {
               label="GitLab"
               sx={{ bgcolor: "#BB9AB1", color: "#000000" }}
             />
+          </Box>
+        </Box>
+      </div>
+
+      {/* Row 2: Two Boxes */}
+      <div
+        style={{
+          display: "flex",
+          gap: "2rem",
+          justifyContent: "center",
+          marginTop: "2rem",
+          marginBottom:"10rem",
+        }}
+      >
+        {/* Box 4 */}
+        <Box
+          className="experience-card"
+          sx={{ p: 1, borderRadius: 5, width: "300px" }}
+        >
+          <Typography variant="body2" sx={{ color: "#496989", mb: 1, fontSize:14, fontWeight:600  }}>
+            August 2024 - September 2024
+          </Typography>
+          <Typography variant="h6" component="div" sx={{ fontWeight: "bold" }}>
+            Software Engineer <br /> (Angular)
+          </Typography>
+          <Typography
+            variant="body2"
+            sx={{ color: "#496989", mb: 2, marginTop: 1, fontSize:14, fontWeight:600  }}
+          >
+            Damro Export
+          </Typography>
+          <Typography
+            variant="body2"
+            sx={{
+              mb: 2,
+              lineHeight: 1.7,
+              fontFamily: "Georgia, sans-serif",
+              fontWeight: 400,
+            }}
+          >
+            Developed an Angular-based Inventory Management System at Damro
+            Export to streamline stock tracking, improve data accuracy, and
+            optimize inventory workflows, ensuring efficient resource
+            management.
+          </Typography>
+          <Divider sx={{ bgcolor: "#444", my: 2, width: "100%" }} />
+          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
+            <Chip label="HTML" sx={{ bgcolor: "#48CFCB", color: "#ffffff" }} />
+            <Chip label="CSS" sx={{ bgcolor: "#326CE5", color: "#ffffff" }} />
+            <Chip label="SCSS" sx={{ bgcolor: "#D33833", color: "#ffffff" }} />
             <Chip
-              label="Postman"
-              sx={{ bgcolor: "#DEF9C4", color: "#000000" }}
+              label="Angular"
+              sx={{ bgcolor: "#77B0AA", color: "#ffffff" }}
             />
+            <Chip label="SQL" sx={{ bgcolor: "#E4B1F0", color: "#ffffff" }} />
+          </Box>
+        </Box>
+
+        {/* Box 5 */}
+        <Box
+          className="experience-card"
+          sx={{ p: 1, borderRadius: 5, width: "300px",  }}
+        >
+          <Typography variant="body2" sx={{ color: "#496989", mb: 1, fontSize:14, fontWeight:600  }}>
+            September 2024 - October 2024
+          </Typography>
+          <Typography variant="h6" component="div" sx={{ fontWeight: "bold" }}>
+            Software Engineer <br /> (Angular)
+          </Typography>
+          <Typography
+            variant="body2"
+            sx={{ color: "#496989", mb: 2, marginTop: 1, fontSize:14, fontWeight:600  }}
+          >
+           Damro Export
+          </Typography>
+          <Typography
+            variant="body2"
+            sx={{
+              mb: 2,
+              lineHeight: 1.7,
+              fontFamily: "Georgia, sans-serif",
+              fontWeight: 400,
+            }}
+          >
+            At Damro Export, contributed to a Customer Management System by
+            creating documentation, writing test cases, and conducting QA
+            testing to ensure system reliability and user satisfaction.
+          </Typography>
+          <Divider sx={{ bgcolor: "#444", my: 2, width: "100%" }} />
+          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
+            <Chip label="C#" sx={{ bgcolor: "#FF6F00", color: "#ffffff" }} />
+            <Chip label="SQL" sx={{ bgcolor: "#306998", color: "#ffffff" }} />
           </Box>
         </Box>
       </div>
     </section>
   );
-}
+};
 
 export default Service;

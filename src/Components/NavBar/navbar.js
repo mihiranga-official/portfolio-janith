@@ -51,7 +51,7 @@ const Navbar = () => {
         </Link>
         <Link
           activeClass="active"
-          to="Service"
+          to="service"
           spy={true}
           offset={-100}
           duration={500}
@@ -81,30 +81,15 @@ const Navbar = () => {
         </Link>
       </div>
       <button
-       style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        border: "2 px solid black",
-        borderRadius: "5rem",
-        padding: "0.5rem 1rem",
-        background: "#F3C623",
-        color: "rgb(29, 27, 27)",
-        fontWeight: 600,
-        fontSize: "1rem",
-        fontFamily: '"Segoe UI", Tahoma, Geneva, Verdana, sans-serif',
-        cursor: "pointer",
-       }}
-       
-        onClick={() => {
-          document
-            .getElementById("contact")
-            .scrollIntoView({ behavior: "smooth" });
-        }}
-      >
-        <ContactMailIcon className="desttopMenuIcon" sx={{width:"1.5rem", height:"1.5rem"}}></ContactMailIcon>
-        Contact me
-      </button>
+  className="buttonContact"
+  onClick={() => {
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+  }}
+>
+  <ContactMailIcon className="desktopMenuIcon" />
+  Contact me
+</button>
+
     </nav>
   );
 };
