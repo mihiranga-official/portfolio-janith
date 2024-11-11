@@ -11,22 +11,35 @@ import "./education.css";
 
 const steps = [
   {
-    label: "Bsc(Hons) in Computer Science & Software Engineering",
+    label: "BSc (Hons) in Computer Science & Software Engineering",
     description: (
-      <a
-        href="https://www.beds.ac.uk/"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{
-          textDecoration: "underline", // Underline the text
-          color: "#000000", // Default text color
-          cursor: "pointer", // Change cursor to pointer
-        }}
-        onMouseOver={(e) => (e.currentTarget.style.color = "#F5841A")} // Change color on hover
-        onMouseOut={(e) => (e.currentTarget.style.color = "000000")} // Revert color when not hovering
-      >
-        University of Bedfordshire (SLIIT 2021)
-      </a>
+      <>
+        <a
+          href="https://www.beds.ac.uk/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            textDecoration: "underline", // Underline the text
+            color: "#000000", // Default text color
+            cursor: "pointer", // Change cursor to pointer
+          }}
+          onMouseOver={(e) => (e.currentTarget.style.color = "#F5841A")} // Change color on hover
+          onMouseOut={(e) => (e.currentTarget.style.color = "#000000")} // Revert color when not hovering
+        >
+          University of Bedfordshire (SLIIT 2021)
+        </a>
+        <p style={{ marginTop: "10px", fontSize: "14px" }}>
+          This course focuses on the technical aspects of network design,
+          installation, configuration, maintenance and management, and the
+          application of contemporary technologies. The Computer Networking BSc
+          (Hons) degree will help you discover a deeper understanding of network
+          design and how they work. <br /> <br/>
+          This program covers project management, hands-on experience through an
+          undergraduate project, and advanced topics in networking, security,
+          and wireless communication, preparing students for tech-focused
+          careers.
+        </p>
+      </>
     ),
   },
   {
@@ -54,6 +67,7 @@ const steps = [
             flexDirection: "column",
             alignItems: "flex-start",
             marginLeft: "10rem",
+            fontSize: "14px",
           }}
         >
           <span>Science For Technology</span>
@@ -64,21 +78,46 @@ const steps = [
     ),
   },
   {
-    label: "G.C.E(O/L) Examination, Sri Lanka",
+    label: "G.C.E (O/L) Examination, Sri Lanka",
     description: (
-      <a
-        href="https://www.nalandaboys.lk/"
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{
-          textDecoration: "underline",
-          cursor: "pointer",
-        }}
-        onMouseOver={(e) => (e.currentTarget.style.color = "#F5841A")}
-        onMouseOut={(e) => (e.currentTarget.style.color = "000000")}
-      >
-        Nalanda Boys College, Minuwangoda (2014)
-      </a>
+      <>
+        <a
+          href="https://www.nalandaboys.lk/"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            textDecoration: "underline",
+            cursor: "pointer",
+          }}
+          onMouseOver={(e) => (e.currentTarget.style.color = "#F5841A")}
+          onMouseOut={(e) => (e.currentTarget.style.color = "#000000")}
+        >
+          Nalanda Boys College, Minuwangoda (2014)
+        </a>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "2fr 2fr 2fr",
+            gap: "8px",
+            marginTop: "10px",
+            fontSize: "14px",
+            alignItems: "flex-start",
+
+          }}
+        >
+            <span>Buddhism</span>
+            <span>Sinhala Language & Literature</span>
+            <span>English Language</span>
+            <span>Mathematics</span>
+            <span>History</span>
+            <span>Science</span>
+            <span>Civic Education</span>
+            <span>Appreciation of Sinhala Literary Texts</span>
+            <span>Health & Physical Education</span>
+            
+         
+        </div>
+      </>
     ),
   },
 ];
@@ -209,7 +248,7 @@ export default function Education() {
               backgroundColor: "#FFE700",
               fontSize: "0.75rem",
               color: "#000000",
-              marginBottom:"8rem",
+              marginBottom: "8rem",
               fontFamily: "Arial, sans-serif",
               fontWeight: "bold",
               padding: "8px",
