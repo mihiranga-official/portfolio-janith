@@ -47,7 +47,7 @@ const steps = [
     description: (
       <>
         <a
-          href="https://www.nalandaboys.lk/"
+          href="http://janadipathi.sch.lk/"
           target="_blank"
           rel="noopener noreferrer"
           style={{
@@ -57,7 +57,7 @@ const steps = [
           onMouseOver={(e) => (e.currentTarget.style.color = "#F5841A")}
           onMouseOut={(e) => (e.currentTarget.style.color = "000000")}
         >
-          Nalanda Boys College, Minuwangoda - Technology Stream (2017)
+          President's College, Minuwangoda - Technology Stream (2017)
         </a>
 
         <br />
@@ -102,9 +102,11 @@ const steps = [
             marginTop: "10px",
             fontSize: "14px",
             alignItems: "flex-start",
+            textAlign:"center"
 
           }}
         >
+      
             <span>Buddhism</span>
             <span>Sinhala Language & Literature</span>
             <span>English Language</span>
