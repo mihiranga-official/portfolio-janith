@@ -143,8 +143,7 @@ export default function Education() {
       <span className="eduDes">
         I completed my O/Ls and A/Ls focused on mathematics and science, then
         earned a Bachelor of Science in Computer Science, developing skills in
-        software development, algorithms, and problem-solving. --- Let me know
-        if you need any more changes!
+        software development, algorithms, and problem-solving. 
       </span>
       <Stepper activeStep={activeStep} orientation="vertical">
         {steps.map((step, index) => (

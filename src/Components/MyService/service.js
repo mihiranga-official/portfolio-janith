@@ -280,6 +280,7 @@ const Service = () => {
           <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
             <Chip label="C#" sx={{ bgcolor: "#FF6F00", color: "#ffffff" }} />
             <Chip label="SQL" sx={{ bgcolor: "#306998", color: "#ffffff" }} />
+            <Chip label="Angular" sx={{ bgcolor: "#306998", color: "#ffffff" }} />
           </Box>
         </Box>
       </div>
