@@ -59,7 +59,7 @@ const Projects = () => {
                 fontWeight: 400,
               }}
             >
-              A salon management web app built with React and Firebase provides
+              A salon management web app built with My Partner using  React and Firebase provides
               features for appointment management, user accounts, and price
               viewing, ensuring real-time updates and efficient customer data
               management.
