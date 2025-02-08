@@ -57,12 +57,12 @@ const Contact = () => {
       <div className="contactContainer">
         <div className="contactDetails">
           <EmailIcon className="contactIcon" />
-          <p>janithmihiranga@gmail.com</p>
+          <p>mihiranga.office@gmail.com</p>
         </div>
         <div className="contactDetails">
           <WhatsAppIcon className="contactIconWsp" />
           <CallIcon className="contactCall" />
-          <p>011 7896325</p>
+          <p>0756534407</p>
         </div>
         <div className="contactDetails">
           <FacebookIcon className="contactIconFa" />
