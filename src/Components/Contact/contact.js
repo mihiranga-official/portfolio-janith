@@ -6,6 +6,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import CallIcon from "@mui/icons-material/Call";
 import emailjs from "@emailjs/browser";
+import { Link } from "react-scroll";
 
 const Contact = () => {
   const form = useRef();
@@ -62,12 +63,15 @@ const Contact = () => {
         <div className="contactDetails">
           <WhatsAppIcon className="contactIconWsp" />
           <CallIcon className="contactCall" />
-          <p>0756534407</p>
+          <p>+94 078-5052-139</p>
         </div>
+
+        <a  href="https://web.facebook.com/Mihirangaz98/" target="_blank" rel="noopener noreferrer">
         <div className="contactDetails">
-          <FacebookIcon className="contactIconFa" />
+          <FacebookIcon   className="contactIconFa" />
           <p>Janith Mihiranga Gurawardana</p>
         </div>
+        </a>
         <div className="contactDetails">
           <InstagramIcon className="contactIconIns" />
           <p>Janith Mihiranga</p>
