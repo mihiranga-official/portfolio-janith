@@ -8,8 +8,10 @@ import Contact from "./Components/Contact/contact";
 import Footer from "./Components/Footer/footer";
 import Projects from "./Components/MyProject/projects";
 import Service from "./Components/MyService/service";
+import usePageTracking from "./pagetracking/usePageTracking";
 
 function App() {
+  usePageTracking();
   return (
     <div className="App">
       <Navbar />
